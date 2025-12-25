@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>TemmieEats | Delicious Everyday</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="eat.css" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo"><i class="fa-solid fa-utensils"></i> TemmieEats</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#offers">What We Offer</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <button class="toggle-btn" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <video autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/5495780/5495780-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Welcome to TemmieEats</h1>
+      <p>Delicious meals, served fresh — every single day.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- WHAT WE OFFER -->
+  <section id="offers">
+    <h2 data-aos="fade-up">What We Offer</h2>
+    <div class="offers">
+      <div class="card" data-aos="zoom-in">
+        <i class="fa-solid fa-truck-fast icon"></i>
+        <h3>Fast Delivery</h3>
+        <p>We deliver your meals hot and fresh, within minutes.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <i class="fa-solid fa-bowl-food icon"></i>
+        <h3>Quality Meals</h3>
+        <p>Our dishes are prepared by top chefs using organic ingredients.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <i class="fa-solid fa-hand-holding-dollar icon"></i>
+        <h3>Affordable Prices</h3>
+        <p>Enjoy restaurant-quality food without breaking the bank.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <h2 data-aos="fade-up">Our Menu</h2>
+    <div class="menu">
+      <div class="card" data-aos="fade-up">
+        <img src="https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress" alt="Jollof Rice">
+        <h3>Jollof Rice</h3>
+        <p>₦2500 — Spicy and delicious, served with chicken.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>₦4000 — Classic Margherita with cheese and tomato sauce.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress" alt="Burger">
+        <h3>Beef Burger</h3>
+        <p>₦3000 — Juicy beef burger with fries and sauce.</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- TAWK.TO CHATBOT -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/YOUR_TAWK_ID/1f******'; // Replace with your real ID
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 data-aos="fade-up">About TemmieEats</h2>
+    <p data-aos="fade-up" data-aos-delay="150">
+      TemmieEats is a modern restaurant based in Ilorin, Nigeria.<br />
+      We bring you the best meals made with passion, love, and the freshest ingredients.<br />
+      Whether you’re dining in or ordering online, we’re here to make every meal special.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 TemmieEats. All Rights Reserved. Designed with <i class="fa-solid fa-heart"></i> by Temmie.</p>
+  </footer>
+
+  <!-- SCRIPT FILES -->
+  <script src="script.js"></script>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <script src="eat.js"></script>
+
+</body>
+</html>
